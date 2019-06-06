@@ -2,6 +2,7 @@ def my_each(words)
   my_statement = []
 i = 0
 while i < words.length
-  my_statement.push(words[i])
+  yield words[i]
+  i = i + 1
 end
 end
